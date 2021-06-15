@@ -1,0 +1,13 @@
+@import 'master';
+
+.loading-screen {
+    background-color: $omstart-2;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .spinner {
+        filter: brightness(0) invert(1)
+    }
+}

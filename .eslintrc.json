@@ -19,7 +19,8 @@
     ],
     "rules": {
         "semi-style": ["error", "last"],
-        "semi" : [2, "never"],
-        "quotes": ["error", "single"]
+        "semi": [2, "never"],
+        "quotes": ["error", "single"],
+        "no-unused-vars": "off"
     }
 }
