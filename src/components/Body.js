@@ -1,8 +1,11 @@
 import React from 'react'
 import '../styles/Body.scss'
 import Container from 'react-bootstrap/Container'
-import Logo from '../img/omstart.png'
-import Map from './assets/MapElement'
+import Logo from '../img/omstart.webp'
+
+const Map = React.lazy(() => import('./assets/MapElement'))
+const CountDown = React.lazy(() => import('./assets/CountDown'))
+const TicketButton = React.lazy(() => import('./assets/TicketButton'))
 
 export default function Body() {
     return (
@@ -20,8 +23,7 @@ export default function Body() {
                             <h1 className="display-5 fw-bold lh-1 mb-3">OMSTART?</h1>
                             <p className="lead">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
                             <div className="d-grid gap-2 d-md-flex justify-content-md-start">
-                                <button type="button" className="btn btn-primary btn-lg px-4 me-md-2">Primary</button>
-                                <button type="button" className="btn btn-outline-secondary btn-lg px-4">Default</button>
+                                <TicketButton />
                             </div>
                         </div>
                     </div>
@@ -107,7 +109,11 @@ export default function Body() {
                 </div>
 
                 <div className="b-example-divider"></div>
+
             </div>
+
+
+            <CountDown />
 
             <Map />
 

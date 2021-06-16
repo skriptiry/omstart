@@ -1,6 +1,6 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import Logo from '../img/omstart.png'
+import Logo from '../img/omstart.webp'
 
 import '../styles/Footer.scss'
 
@@ -19,17 +19,17 @@ export default function Footer() {
 
                         <ul className="list-unstyled d-flex flex-row justify-content-center">
                             <li>
-                                <a className="text-white px-2" href="#!">
+                                <a className="text-white px-2" href="#!" aria-label="Twitter">
                                     <FontAwesomeIcon icon={['fab', 'twitter']} size="lg" />
                                 </a>
                             </li>
                             <li>
-                                <a className="text-white px-2" href="#!">
+                                <a className="text-white px-2" href="#!" aria-label="Facebook">
                                     <FontAwesomeIcon icon={['fab', 'facebook']} size="lg" />
                                 </a>
                             </li>
                             <li>
-                                <a className="text-white ps-2" href="#!">
+                                <a className="text-white ps-2" href="#!" aria-label="Youtube">
                                     <FontAwesomeIcon icon={['fab', 'youtube']} size="lg" />
                                 </a>
                             </li>
@@ -107,7 +107,7 @@ export default function Footer() {
             <div className="text-center p-3">
                 © 2021 Copyright: OMSTART
                 <br />
-                <a href="#">back to top</a>
+                <a className="text-white link-underline" href="#">back to top</a>
             </div>
         </footer>
     )

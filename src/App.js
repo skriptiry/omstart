@@ -1,47 +1,70 @@
-import React, { useEffect, useState } from 'react'
-import './styles/App.scss'
+import React, { useEffect, useState, Suspense } from 'react'
+import Spinner from './img/spinner.svg'
 import Nav from './components/Nav'
 import Header from './components/Header'
-import Footer from './components/Footer'
-import Body from './components/Body'
 import Helmet from 'react-helmet'
+import './styles/App.scss'
 
 //iconit
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
 
-//iconit muille komponenteille
+const Body = React.lazy(() => import('./components/Body'))
+
+//minimidelay setTimeoutilla, on nimittäin smooth loadingscreen
+const Footer = React.lazy(() => {
+  return Promise.all([
+    import('./components/Footer'),
+    new Promise(resolve => setTimeout(resolve, 1500))
+  ])
+    .then(([moduleExports]) => moduleExports)
+})
+
+
+//iconit muille komponenteille, tähän voi pilkulla eroteltuna lisätä muitakin tarvittaessa
 library.add(fab)
+
 
 function App() {
 
-  const [loading, setLoading] = useState(true)
-
   useEffect(() => {
-    setTimeout(() => setLoading(false), 1500)
-  }, [])
+    // When the user scrolls the page, execute myFunction
+    window.onscroll = function () { myFunction() }
+
+    function myFunction() {
+      var winScroll = document.body.scrollTop || document.documentElement.scrollTop
+      var height = document.documentElement.scrollHeight - document.documentElement.clientHeight
+      var scrolled = (winScroll / height) * 100
+      document.getElementById('myBar').style.height = scrolled + '%'
+    }
+  })
 
   return (
     <div>
-      {loading === false ?
-        <div className="App">
+      <div className="App">
+
+        <Suspense fallback={
+          <div className="loading-screen">
+            <img src={Spinner} className="zoom-in-zoom-out" />
+          </div>
+        }>
 
           <Helmet>
             <title>OMSTART</title>
-            <meta name="description" content="OMSTART, a party for students in Joensuu" />
+            <meta name="description" content="OMSTART-party in Joensuu" />
           </Helmet>
+
+          <div className="progress-container">
+            <div className="progress-bar" id="myBar"></div>
+          </div>
 
           <Nav />
           <Header />
           <Body />
           <Footer />
 
-        </div>
-        :
-        <div className="loading-screen">
-          <img className="spinner" src="https://skripti.org/img/spinner.svg" alt="spinner" width="150px" />
-        </div>
-      }
+        </Suspense>
+      </div>
     </div>
   )
 }

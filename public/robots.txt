@@ -3,3 +3,4 @@ User-agent: *
 Disallow:
 
 #XD äiä kunnon haxör
+#sivut käsityötä

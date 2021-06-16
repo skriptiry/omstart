@@ -1,7 +1,7 @@
 import React from 'react'
 
 export default function MapElement() {
-    
+
     //karttaelementti bodyyn
     return (
         <div className="container-fluid p-0">

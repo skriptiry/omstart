@@ -4,6 +4,17 @@
     background: linear-gradient(90deg, $omstart-1 0%, $omstart-2 100%);
 }
 
+:root {
+    --br-blobby: 50%;
+    --br-blobby-before: 50%;
+    --br-blobby-after: 50%;
+    --blob: #F474D0;
+}
+
+.logo {
+    z-index: 1000;
+}
+
 .box {
     animation: rotate 5s linear infinite;
     background-color: var(--blob);
@@ -12,7 +23,6 @@
     height: 250px;
     width: 250px;
     transition: 0.3s linear;
-    z-index: -1;
 }
 
 .box::after {
@@ -26,7 +36,6 @@
     height: 104%;
     width: 104%;
     transition: 0.3s linear;
-    z-index: -9;
 
 }
 
@@ -41,7 +50,6 @@
     height: 108%;
     width: 108%;
     transition: 0.3s linear;
-    z-index: -9;
 
 }
 
