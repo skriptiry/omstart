@@ -11,7 +11,7 @@ export default function TicketButton() {
         <div>
             <a className="bn39" href={link}>
                 <span className="bn39span">
-                    osta liput
+                    osta liput vaiks tai jottai
                 </span>
             </a>
         </div>
