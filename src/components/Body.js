@@ -2,6 +2,7 @@ import React from 'react'
 import '../styles/Body.scss'
 import Container from 'react-bootstrap/Container'
 import Logo from '../img/omstart.webp'
+import Screencap from '../img/screencap-mobile.png'
 
 const Map = React.lazy(() => import('./assets/MapElement'))
 const CountDown = React.lazy(() => import('./assets/CountDown'))
@@ -16,7 +17,7 @@ export default function Body() {
 
                 <div className="container col-xxl-8 px-4 py-5">
                     <div className="row flex-lg-row-reverse align-items-center g-5 py-5">
-                        <div className="col-10 col-sm-8 col-lg-6">
+                        <div className="col-10 col-sm-8 col-lg-6 d-none d-lg-block">
                             <img src={Logo} className="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy" />
                         </div>
                         <div className="col-lg-6">
@@ -29,7 +30,25 @@ export default function Body() {
                     </div>
                 </div>
 
+                <div className="px-4 pt-5 my-5 text-center border-bottom">
+                    <h1 className="display-4 fw-bold">kide.appista jotain tähän?</h1>
+                    <div className="col-lg-6 mx-auto">
+                        <p className="lead mb-4">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+                        <div className="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+                            <button type="button" className="btn btn-primary btn-lg px-4 me-sm-3">Primary button</button>
+                            <button type="button" className="btn btn-outline-secondary btn-lg px-4">Secondary</button>
+                        </div>
+                    </div>
+                    <div className="overflow-hidden">
+                        <div className="container px-5 screencap">
+                            <img src={Screencap} className="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="700" height="500" loading="lazy" />
+                        </div>
+                    </div>
+                </div>
+
                 <h2 className="pb-2 border-bottom">Kuvia tms</h2>
+
+                <div className="b-example-divider"></div>
 
                 <div className="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
                     <div className="col">
@@ -117,6 +136,6 @@ export default function Body() {
 
             <Map />
 
-        </Container>
+        </Container >
     )
 }

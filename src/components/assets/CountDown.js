@@ -28,7 +28,7 @@ export default function MapElement() {
             // If the count down is finished, write some text
             if (distance < 0) {
                 clearInterval(x)
-                document.getElementById('time-counter').innerHTML = 'OHI ON!'
+                document.getElementById('time-counter').innerHTML = 'OHI ON! Nähdään ensi vuonna!'
             }
         }, 1000)
     })

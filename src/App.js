@@ -1,5 +1,5 @@
 import React, { useEffect, useState, Suspense } from 'react'
-import Spinner from './img/spinner.svg'
+import Spinner from './img/kalja.svg'
 import Nav from './components/Nav'
 import Header from './components/Header'
 import Helmet from 'react-helmet'
