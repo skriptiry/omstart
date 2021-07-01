@@ -15,7 +15,7 @@ export default function Footer() {
                             <img src={Logo} height="140" alt="omstart" loading="lazy" />
                         </div>
 
-                        <p className="text-center">OMSTART</p>
+                        <p className="text-center lead fw-bold">OMSTART</p>
 
                         <ul className="list-unstyled d-flex flex-row justify-content-center">
                             <li>
@@ -37,26 +37,26 @@ export default function Footer() {
                     </div>
 
                     <div className="col-lg-3 col-md-6 mb-4 mb-md-0">
-                        <h5 className="text-uppercase mb-4">heading</h5>
+                        <h5 className="text-uppercase mb-4">Tietoa</h5>
 
                         <ul className="list-unstyled">
                             <li className="mb-2">
-                                <a href="#!" className="text-white"><i className="fas fa-paw pe-3"></i>text</a>
+                                <div href="#!" className="text-white"><i className="fas fa-paw pe-3"></i>Mitä?</div>
                             </li>
                             <li className="mb-2">
-                                <a href="#!" className="text-white"><i className="fas fa-paw pe-3"></i>text</a>
+                                <div href="#!" className="text-white"><i className="fas fa-paw pe-3"></i>Missä?</div>
                             </li>
                             <li className="mb-2">
-                                <a href="#!" className="text-white"><i className="fas fa-paw pe-3"></i>text</a>
+                                <div href="#!" className="text-white"><i className="fas fa-paw pe-3"></i>Milloin?</div>
                             </li>
                             <li className="mb-2">
-                                <a href="#!" className="text-white"><i className="fas fa-paw pe-3"></i>text</a>
+                                <div href="#!" className="text-white"><i className="fas fa-paw pe-3"></i>Paljonko maksaa?</div>
                             </li>
                             <li className="mb-2">
-                                <a href="#!" className="text-white"><i className="fas fa-paw pe-3"></i>text</a>
+                                <div className="text-white"><i className="fas fa-paw pe-3"></i>Kenelle?</div>
                             </li>
                             <li className="mb-2">
-                                <a href="#!" className="text-white"><i className="fas fa-paw pe-3"></i>text</a>
+                                <div href="#!" className="text-white"><i className="fas fa-paw pe-3"></i>text</div>
                             </li>
                         </ul>
                     </div>

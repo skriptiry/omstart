@@ -7,6 +7,8 @@
 - [ ] Header-layout
 - [ ] Navbar
 - [ ] linkin kopiointi
+- [ ] footer inffot
+- [ ] käännökset
 
 ### In Progress
 
