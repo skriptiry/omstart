@@ -1,8 +1,7 @@
 import React from 'react'
 import Navbar from 'react-bootstrap/Navbar'
 import TicketButton from './assets/TicketButton'
-import CopyOverlay from './assets/CopyOverlay'
-
+import CopyPopup from './assets/CopyPopup'
 import '../styles/Nav.scss'
 
 export default function Nav() {
@@ -11,7 +10,7 @@ export default function Nav() {
             <Navbar.Collapse className="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
                 <ul className="navbar-nav me-auto ms-2">
                     <li className="nav-item active">
-                        <CopyOverlay />
+                        <CopyPopup />
                     </li>
                 </ul>
             </Navbar.Collapse>

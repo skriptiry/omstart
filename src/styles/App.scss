@@ -36,7 +36,7 @@
 .link-underline {
     position: relative;
     text-decoration: none;
-    color: purple;
+    color: black;
 
     &:after {
         content: '';
@@ -52,6 +52,7 @@
     }
 
     &:hover {
+        cursor: pointer;
 
         &:after {
             transform: scaleX(0);
