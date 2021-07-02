@@ -31,18 +31,18 @@ export default function Header() {
     return (
         <Container className="p-5 mw-100 header-bg">
             <Container>
-                <div className="row">
-                    <div className="col text-white m-5">
+                <div className="row justify-content-center">
+                    <div className="col-3 text-white d-none d-lg-block">
                         <div className="box">
                             <div className="logo-container">
                                 <img className="img-logo" src={logo} alt="omstart" width='250px' loading="lazy" />
                             </div>
                         </div>
                     </div>
-                    <div className="col text-white my-auto">
+                    <div className="col-5 text-white my-auto">
                         <div className="">
                             <h1 className="display-5 fw-bold lh-1 mb-3">OMSTART tulee taas!</h1>
-                            <p className="lead">omstart omstart omstart omstart omstart omstart omstart omstart omstart omstart omstart omstart omstart omstart omstart omstart </p>
+                            <p className="lead">Syksyn avausbileet starttaavat 3, 2, 1...</p>
                         </div>
                     </div>
                 </div>

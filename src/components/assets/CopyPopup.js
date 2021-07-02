@@ -1,13 +1,37 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import Modal from 'react-bootstrap/Modal'
 import '../../styles/CopyPopup.scss'
 export default function CopyPopup() {
     const [show, setShow] = useState(false)
+    const [copied, setCopied] = useState(false)
 
-    const handleClose = () => setShow(false)
+    const handleClose = () => {
+        setShow(false)
+        setCopied(false)
+    }
     const handleShow = () => setShow(true)
+    const handleCopy = () => setCopied(true)
 
-    const omstartLink = 'https://www.omstart.party'
+    const omstartLink = 'omstart.party'
+
+    useEffect(() => {
+        var animateButton = function (e) {
+
+            //reset animation
+            e.target.classList.remove('animate')
+
+            e.target.classList.add('animate')
+            setTimeout(function () {
+                e.target.classList.remove('animate')
+            }, 700)
+        }
+        
+        var classname = document.getElementsByClassName('confetti-button')
+
+        if (classname.length > 0) {
+            classname[0].addEventListener('click', animateButton, false)
+        }
+    })
 
     //Custom nappi lippujen ostamiselle 
     return (
@@ -16,13 +40,16 @@ export default function CopyPopup() {
 
             <Modal show={show} onHide={handleClose}>
                 <Modal.Header>
-                    <Modal.Title>Kopioi linkki</Modal.Title>
+                    <Modal.Title>Kopioi linkki klikkaamalla</Modal.Title>
                 </Modal.Header>
                 <Modal.Body className="text-center">
-                    <input className="w-75 text-center copy-input" type="link" disabled value={omstartLink} defaultValue={omstartLink} />
+                    <button className="confetti-button" onClick={handleCopy}>{omstartLink}</button>
+                    {copied &&
+                        <p className=" mt-2">Kopioitu!</p>
+                    }
                 </Modal.Body>
                 <Modal.Footer>
-                    <a className="nav-link link-underline close-button" style={{color: 'rgba(0,0,0,.55)'}} variant="dark" onClick={handleClose} href="#">
+                    <a className="nav-link link-underline close-button" style={{ color: 'rgba(0,0,0,.55)' }} variant="dark" onClick={handleClose} href="#">
                         Sulje
                     </a>
                 </Modal.Footer>

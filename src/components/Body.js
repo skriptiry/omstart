@@ -13,6 +13,7 @@ const TicketButton = React.lazy(() => import('./assets/TicketButton'))
 export default function Body() {
     return (
         <Container className="p-0 m-0 mw-100">
+            
             <div className="container px-4 py-5" id="custom-cards">
 
                 <div className="b-example-divider"></div>
@@ -24,7 +25,7 @@ export default function Body() {
                         </div>
                         <div className="col-lg-6">
                             <h1 className="display-5 fw-bold lh-1 mb-3">OMSTART?</h1>
-                            <p className="lead">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+                            <p className="lead">What the fuck did you just fucking say about me, you little bitch? Ill have you know I graduated top of my class in the Navy Seals, and Ive been involved in numerous secret raids on Al-Quaeda, and I have over 300 confirmed kills. I am trained in gorilla warfare and Im the top sniper in the entire US armed forces. You are nothing to me but just another target.</p>
                             <div className="d-grid gap-2 d-md-flex justify-content-md-start">
                                 <TicketButton />
                             </div>
@@ -33,12 +34,11 @@ export default function Body() {
                 </div>
 
                 <div className="px-4 pt-5 my-5 text-center border-bottom">
-                    <h1 className="display-4 fw-bold">kide.appista jotain tähän?</h1>
+                    <h1 className="display-4 fw-bold">Liput kätevästi kide.appin kautta!</h1>
                     <div className="col-lg-6 mx-auto">
-                        <p className="lead mb-4">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
-                        <div className="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
-                            <button type="button" className="btn btn-primary btn-lg px-4 me-sm-3">Primary button</button>
-                            <button type="button" className="btn btn-outline-secondary btn-lg px-4">Secondary</button>
+                        <p className="lead mb-4">Lipunmyynti aukeaa klo 12.00 jne. jne. mitä tähänkin kirjottelee</p>
+                        <div className="d-grid gap-2 d-sm-flex justify-content-center mb-5">
+                            <TicketButton />
                         </div>
                     </div>
                     <div className="overflow-hidden">
@@ -119,12 +119,11 @@ export default function Body() {
 
                 <div className="px-4 py-5 my-5 text-center">
                     <FontAwesomeIcon icon={['fas', 'fire-alt']} size="5x" />
-                    <h1 className="display-5 fw-bold">eikun menox xd</h1>
+                    <h1 className="display-5 fw-bold">Ja eikun menoks!</h1>
                     <div className="col-lg-6 mx-auto">
                         <p className="lead mb-4">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
                         <div className="d-grid gap-2 d-sm-flex justify-content-sm-center">
-                            <button type="button" className="btn btn-primary btn-lg px-4 gap-3">Primary button</button>
-                            <button type="button" className="btn btn-outline-secondary btn-lg px-4">Secondary</button>
+                            <TicketButton />
                         </div>
                     </div>
                 </div>
@@ -132,10 +131,9 @@ export default function Body() {
                 <div className="b-example-divider"></div>
 
             </div>
-
-
+        
             <CountDown />
-
+            
             <Map />
 
         </Container >
