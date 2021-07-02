@@ -9,7 +9,10 @@
 }
 
 .header-bg {
-    background: linear-gradient(90deg, $omstart-1 0%, $omstart-2 100%);
+    background-image: linear-gradient(to bottom, rgba(0, 109, 172, 0.493), rgba(163, 0, 122, 0.73)), url('../img/joensuu.png');
+    background-size: cover;
+    background-position: 50% 40%;
+    background-repeat: no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
