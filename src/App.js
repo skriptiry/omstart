@@ -1,14 +1,14 @@
-import React, { useEffect, useState, Suspense } from 'react'
 import Spinner from './img/kalja.svg'
-import Nav from './components/Nav'
 import Header from './components/Header'
 import Helmet from 'react-helmet'
+import React, { useEffect, Suspense } from 'react'
+import Nav from './components/Nav'
 import './styles/App.scss'
 
 //iconit
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { fab } from '@fortawesome/free-brands-svg-icons'
-import { fas } from '@fortawesome/free-solid-svg-icons'
+import { faFacebook, faInstagram, faYoutube, faKaggle } from '@fortawesome/free-brands-svg-icons'
+import { faCalendarDay, faMapMarkerAlt, faTicketAlt, faFireAlt, faEnvelope } from '@fortawesome/free-solid-svg-icons'
 
 const Body = React.lazy(() => import('./components/Body'))
 
@@ -23,16 +23,26 @@ const Footer = React.lazy(() => {
 
 
 //iconit muille komponenteille, tähän voi pilkulla eroteltuna lisätä muitakin tarvittaessa
-library.add(fab, fas)
+library.add(
+  faCalendarDay,
+  faMapMarkerAlt,
+  faTicketAlt,
+  faFireAlt,
+  faEnvelope,
+  faFacebook,
+  faInstagram,
+  faYoutube,
+  faKaggle
+)
 
 
 function App() {
 
   useEffect(() => {
-    // When the user scrolls the page, execute myFunction
-    window.onscroll = function () { myFunction() }
+    // When the user scrolls the page, execute createScrollbar
+    window.onscroll = function () { createScrollbar() }
 
-    function myFunction() {
+    function createScrollbar() {
       var winScroll = document.body.scrollTop || document.documentElement.scrollTop
       var height = document.documentElement.scrollHeight - document.documentElement.clientHeight
       var scrolled = (winScroll / height) * 100
@@ -52,7 +62,7 @@ function App() {
 
           <Helmet>
             <title>OMSTART</title>
-            <meta name="description" content="OMSTART-party in Joensuu" />
+            <meta name="description" content="OMSTART - Syksyn aloitusbileet!" />
           </Helmet>
 
           <div className="progress-container">

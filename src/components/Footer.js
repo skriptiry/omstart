@@ -12,13 +12,13 @@ export default function Footer() {
                 <div className="row my-4">
                     <div className="col-lg-3 col-md-6 mb-4 mb-md-0">
                         <div className="rounded-circle bg-white shadow-1-strong d-flex align-items-center justify-content-center mb-4 mx-auto logo-div">
-                            <img src={Logo} height="140" alt="omstart" loading="lazy" />
+                            <img src={Logo} height="140px" width='140px' alt="omstart" loading="lazy" />
                         </div>
                         <p className="text-center lead fw-bold">OMSTART</p>
                     </div>
 
                     <div className="col-lg-3 col-md-6 mb-4 mb-md-0">
-                        <h5 className="text-uppercase mb-4">Tietoa</h5>
+                        <h3 className="text-uppercase mb-4">Tietoa</h3>
 
                         <ul className="list-unstyled">
                             <li className="mb-2">
@@ -40,7 +40,7 @@ export default function Footer() {
                     </div>
 
                     <div className="col-lg-3 col-md-6 mb-4 mb-md-0">
-                        <h5 className="text-uppercase mb-4">seuraa meitä</h5>
+                        <h3 className="text-uppercase mb-4">seuraa meitä</h3>
 
                         <ul className="list-unstyled">
                             <li className="mb-2">
@@ -63,7 +63,7 @@ export default function Footer() {
                     </div>
 
                     <div className="col-lg-3 col-md-6 mb-4 mb-md-0">
-                        <h5 className="text-uppercase mb-4">Ota yhteyttä</h5>
+                        <h3 className="text-uppercase mb-4">Ota yhteyttä</h3>
 
                         <ul className="list-unstyled">
                             <li className="mb-2">

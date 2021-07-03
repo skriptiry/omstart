@@ -59,7 +59,6 @@ export default function Body() {
                                 <h2 className="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Short title, long jacket</h2>
                                 <ul className="d-flex list-unstyled mt-auto">
                                     <li className="me-auto">
-                                        <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32" className="rounded-circle border border-white" />
                                     </li>
                                     <li className="d-flex align-items-center me-3">
                                         <svg className="bi me-2" width="1em" height="1em"><use xlinkHref="#calendar3" /></svg>
@@ -80,7 +79,6 @@ export default function Body() {
                                 <h2 className="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Much longer title that wraps to multiple lines</h2>
                                 <ul className="d-flex list-unstyled mt-auto">
                                     <li className="me-auto">
-                                        <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32" className="rounded-circle border border-white" />
                                     </li>
                                     <li className="d-flex align-items-center me-3">
                                         <svg className="bi me-2" width="1em" height="1em"><use xlinkHref="#geo-fill" /></svg>
@@ -101,7 +99,6 @@ export default function Body() {
                                 <h2 className="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Another longer title belongs here</h2>
                                 <ul className="d-flex list-unstyled mt-auto">
                                     <li className="me-auto">
-                                        <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32" className="rounded-circle border border-white" />
                                     </li>
                                     <li className="d-flex align-items-center me-3">
                                         <svg className="bi me-2" width="1em" height="1em"><use xlinkHref="#geo-fill" /></svg>
