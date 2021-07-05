@@ -5,14 +5,21 @@ export default function CopyPopup() {
     const [show, setShow] = useState(false)
     const [copied, setCopied] = useState(false)
 
+    //suljetaan ikkuna ja kopioitu falseksi
     const handleClose = () => {
         setShow(false)
         setCopied(false)
     }
-    const handleShow = () => setShow(true)
-    const handleCopy = () => setCopied(true)
 
-    const omstartLink = 'omstart.party'
+    const handleShow = () => setShow(true)
+
+    //tekstin kopiointi ja näytön päivitys
+    const handleCopy = () => {
+        navigator.clipboard.writeText(link)
+        setCopied(true)
+    }
+
+    const link = 'omstart.party'
 
     useEffect(() => {
         var animateButton = function (e) {
@@ -43,7 +50,7 @@ export default function CopyPopup() {
                     <Modal.Title>Kopioi linkki klikkaamalla</Modal.Title>
                 </Modal.Header>
                 <Modal.Body className="text-center">
-                    <button className="confetti-button" onClick={handleCopy}>{omstartLink}</button>
+                    <button className="confetti-button" onClick={() => handleCopy()}>{link}</button>
                     {copied &&
                         <p className=" mt-2">Kopioitu!</p>
                     }

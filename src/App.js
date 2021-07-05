@@ -3,6 +3,7 @@ import Header from './components/Header'
 import Helmet from 'react-helmet'
 import React, { useEffect, Suspense } from 'react'
 import Nav from './components/Nav'
+import Nav2 from './components/Nav2'
 import './styles/App.scss'
 
 //iconit
@@ -70,6 +71,7 @@ function App() {
           </div>
 
           <Nav />
+          <Nav2 />
           <Header />
           <Body />
           <Footer />

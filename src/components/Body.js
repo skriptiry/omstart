@@ -128,9 +128,9 @@ export default function Body() {
                 <div className="b-example-divider"></div>
 
             </div>
-        
-            <CountDown />
             
+            <CountDown />
+
             <Map />
 
         </Container >
