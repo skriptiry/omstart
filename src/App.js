@@ -2,14 +2,13 @@ import Spinner from './img/kalja.svg'
 import Header from './components/Header'
 import Helmet from 'react-helmet'
 import React, { useEffect, Suspense } from 'react'
-import Nav from './components/Nav'
 import Nav2 from './components/Nav2'
 import './styles/App.scss'
 
 //iconit
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faFacebook, faInstagram, faYoutube, faKaggle } from '@fortawesome/free-brands-svg-icons'
-import { faCalendarDay, faMapMarkerAlt, faTicketAlt, faFireAlt, faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { faCalendarDay, faMapMarkerAlt, faTicketAlt, faFireAlt, faEnvelope, faQuoteLeft, faQuoteRight } from '@fortawesome/free-solid-svg-icons'
 
 const Body = React.lazy(() => import('./components/Body'))
 
@@ -33,7 +32,9 @@ library.add(
   faFacebook,
   faInstagram,
   faYoutube,
-  faKaggle
+  faKaggle,
+  faQuoteLeft,
+  faQuoteRight
 )
 
 
@@ -70,7 +71,7 @@ function App() {
             <div className="progress-bar" id="myBar"></div>
           </div>
 
-          <Nav />
+          {/*<Nav />*/}
           <Nav2 />
           <Header />
           <Body />

@@ -40,7 +40,6 @@ export default function CopyPopup() {
         }
     })
 
-    //Custom nappi lippujen ostamiselle 
     return (
         <div>
             <a className="nav-link link-underline" href="#" onClick={handleShow}>JAA</a>
@@ -50,7 +49,7 @@ export default function CopyPopup() {
                     <Modal.Title>Kopioi linkki klikkaamalla</Modal.Title>
                 </Modal.Header>
                 <Modal.Body className="text-center">
-                    <button className="confetti-button" onClick={() => handleCopy()}>{link}</button>
+                    <button className="confetti-button" onClick={() => handleCopy()}><strong>{link}</strong></button>
                     {copied &&
                         <p className=" mt-2">Kopioitu!</p>
                     }

@@ -15,12 +15,12 @@ export default function Nav2() {
                     <Nav className="me-auto">
                     </Nav>
                     <Nav className="ml-auto">
-                        <Nav.Link>
+                        <div className="nav-link">
                             <CopyPopup />
-                        </Nav.Link>
-                        <Nav.Link href='https://kide.app/events/814170de-afab-4aa6-8256-e4a0718cf39d'>
+                        </div>
+                        <div className="nav-link" href='https://kide.app/events/814170de-afab-4aa6-8256-e4a0718cf39d'>
                             <TicketButton />
-                        </Nav.Link>
+                        </div>
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>

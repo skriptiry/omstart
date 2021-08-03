@@ -4,6 +4,13 @@
     background-color: $omstart-grey;
 }
 
+.quote {
+    border-color: white;
+    border-left: 10px;
+    border-radius: 10px;
+    font-style: italic;
+}
+
 .screencap {
     max-height: 30vh;
 }
